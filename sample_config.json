@@ -1,0 +1,69 @@
+{
+  "_comment": "Smart Timelapse Editor Configuration - Devon Crawford Style",
+  "_description": "Adjust these settings to customize your timelapse output",
+  
+  "input_folder": "./raw_footage",
+  "output_file": "./timelapse_output.mp4",
+  
+  "_timing_section": "=== TIMING SETTINGS ===",
+  "target_duration": 60,
+  "_target_duration_note": "Target output duration in seconds (60-90 recommended for social media)",
+  
+  "min_clip_duration": 0.3,
+  "_min_clip_note": "Minimum clip length - shorter = more energetic cuts",
+  
+  "max_clip_duration": 2.0,
+  "_max_clip_note": "Maximum clip length - longer clips for important moments",
+  
+  "_detection_section": "=== DETECTION SETTINGS ===",
+  "motion_threshold": 0.02,
+  "_motion_threshold_note": "Motion sensitivity 0-1 (lower = more sensitive, catches subtle typing)",
+  
+  "scene_change_threshold": 0.3,
+  "_scene_change_note": "How different frames need to be to count as scene change",
+  
+  "activity_percentile": 80,
+  "_activity_percentile_note": "Only keep the top X% most active moments (higher = more selective)",
+  
+  "_sampling_section": "=== SAMPLING SETTINGS ===",
+  "analysis_fps": 2,
+  "_analysis_fps_note": "Frames per second to analyze (lower = faster processing)",
+  
+  "sample_interval": 5,
+  "_sample_interval_note": "Seconds between potential clip candidates",
+  
+  "_output_section": "=== OUTPUT SETTINGS ===",
+  "output_fps": 30,
+  "output_resolution": null,
+  "_output_resolution_note": "Set to [1920, 1080] for 1080p, [1080, 1920] for vertical, null for original",
+  
+  "output_codec": "libx264",
+  "output_quality": 23,
+  "_output_quality_note": "CRF value: 18=high quality/large file, 23=balanced, 28=smaller file",
+  
+  "_style_section": "=== STYLE SETTINGS ===",
+  "speed_variation": true,
+  "_speed_variation_note": "Randomly vary playback speed for dynamic effect",
+  
+  "speed_range": [1.0, 2.0],
+  "_speed_range_note": "Min and max speed multipliers when speed_variation is true",
+  
+  "add_transitions": false,
+  "_transitions_note": "Add crossfade transitions between clips (experimental)",
+  
+  "transition_duration": 0.1,
+  
+  "_audio_section": "=== AUDIO SETTINGS ===",
+  "keep_audio": false,
+  "_keep_audio_note": "Usually false for timelapses - add music in post",
+  
+  "_advanced_section": "=== ADVANCED SETTINGS ===",
+  "prefer_typing_motion": true,
+  "_prefer_typing_note": "Prioritize keyboard/coding activity patterns",
+  
+  "avoid_static": true,
+  "_avoid_static_note": "Skip completely static/idle sections",
+  
+  "randomize_order": false,
+  "_randomize_note": "false=chronological order, true=random order"
+}
