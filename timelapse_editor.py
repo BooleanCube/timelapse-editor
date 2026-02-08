@@ -21,16 +21,8 @@ from dataclasses import dataclass, field
 from typing import List, Optional, Tuple
 import random
 
-# Check for required packages
-try:
-    import cv2
-    import numpy as np
-except ImportError:
-    print("Installing required packages...")
-    subprocess.run([sys.executable, "-m", "pip", "install", 
-                   "opencv-python-headless", "numpy", "--break-system-packages", "-q"])
-    import cv2
-    import numpy as np
+import cv2
+import numpy as np
 
 
 @dataclass

@@ -3,20 +3,20 @@
   "output_file": "./timelapse_output.mp4",
   "target_duration": 75,
   "min_clip_duration": 2.0,
-  "max_clip_duration": 5.0,
+  "max_clip_duration": 4.0,
   "motion_threshold": 0.015,
   "scene_change_threshold": 0.3,
   "activity_percentile": 85,
   "analysis_fps": 2,
   "sample_interval": 30,
-  "output_fps": 30,
+  "output_fps": 60,
   "output_resolution": null,
   "output_codec": "libx264",
   "output_quality": 23,
   "speed_variation": true,
   "speed_range": [
     1.0,
-    1.5
+    1.75
   ],
   "add_transitions": false,
   "transition_duration": 0.1,
